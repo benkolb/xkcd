@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#sidebarOpen").load("http://www.bkolb.eu/sidebar_open.html"); 
+    });
+    </script> 
+	<script> 
+    $(function(){
+      $("#sidebarClose").load("http://www.bkolb.eu/sidebar_close.html"); 
+    });
+    </script> 
+
 <link rel="shortcut icon" type="image/x-icon" href="http://benkolb.github.io/favicon.ico">
 <link rel="stylesheet" type="text/css" media="screen"
       href="http://benkolb.github.io/general.css">
@@ -11,23 +24,11 @@
 <table width="100%" border="0">
 <tr>
 <td class="sidebar" width="15%">
-<br /><br />
-<br /><br />
-<a href="http://benkolb.github.io/" style="color: white; text-decoration: none; font-size: 120%">Home</a>
-<br /><br />
-<a href="http://benkolb.github.io/timeseries/" style="color: white; text-decoration: none; font-size: 120%">Time series</a>
-<br /><br />
-<a href="http://benkolb.github.io/codes/" style="color: white; text-decoration: none; font-size: 120%">Codes</a>
-<br /><br />
-<a href="http://benkolb.github.io/how_to/" style="color: white; text-decoration: none; font-size: 120%">Manuals</a>
-<br /><br />
-<a href="http://benkolb.github.io/quotes/" style="color: white; text-decoration: none; font-size: 120%">Quotes</a>
-<br /><br />
-<a href="http://benkolb.github.io/xkcd/"style="color: white; text-decoration: none; font-size: 120%">A Primer in Metrics with xkcd.com</a>
+<div id="sidebarOpen"></div>
 </td>
 <td class="body">
 <br />
-<p>A significant part of my limited understanding of econometric concepts stems from the wonderful site of <a href="http://www.xkcd.com">xkcd.com</a>. Thank you, Randall Munroe!</p>
+<p>A significant part of my understanding of econometric concepts stems from the wonderful site of <a href="http://www.xkcd.com">xkcd.com</a>. Thank you, Randall Munroe!</p>
 <br/><br/>
 <blockquote>
 <header><a href="http://www.xkcd.com/552/" style="color: black; text-decoration: none; font-size: 120%">Correlation</a></header>
@@ -50,6 +51,12 @@
 </blockquote>
 <br /><br />
 <blockquote>
+<header><a href="http://www.xkcd.com/1478/" style="color: black; text-decoration: none; font-size: 120%">p-Values</a></header>
+<br/>
+<IMG SRC="p_values.png">
+</blockquote>
+<br /><br />
+<blockquote>
 <header><a href="http://www.xkcd.com/605/" style="color: black; text-decoration: none; font-size: 120%">Extrapolating</a></header>
 <br/>
 <IMG SRC="extrapolating.png">
@@ -68,8 +75,7 @@
 </blockquote>
 <br /><br />
 <a href="http://benkolb.github.io/">back</a>
-</td>
-</tr>
-</table>
+<!-- use external sidebar_close.html -->
+<div id="sidebarClose"></div>
 </body>
 </html>
